@@ -2,17 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CounterModule } from './counter/counter.module';
-import { HeroModule } from './heroes/hero.module';
+import { VariantSearchComponent } from './variant-search/variant-search.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VariantSearchComponent
   ],
   imports: [
     BrowserModule,
-    CounterModule,
-    HeroModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

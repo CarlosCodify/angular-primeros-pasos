@@ -1,0 +1,8 @@
+<input type="text" [formControl]="searchControl" placeholder="Search variants">
+<div>
+  <ul>
+    <li *ngFor="let variant of products" (click)="selectVariant(variant)">
+      {{ variant.title }}
+    </li>
+  </ul>
+</div>

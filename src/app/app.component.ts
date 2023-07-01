@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  public title: string = 'Hola mundo';
+  public title: string = 'Busqueda de productos';
 }
