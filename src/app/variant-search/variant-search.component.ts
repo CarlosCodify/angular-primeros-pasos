@@ -20,7 +20,7 @@ export class VariantSearchComponent {
 
   setupSearch() {
     this.searchControl.valueChanges.pipe(
-      debounceTime(300),
+      debounceTime(700),
       distinctUntilChanged(),
       switchMap(searchTerm => this.searchVariants(searchTerm))
     ).subscribe(variants => {
